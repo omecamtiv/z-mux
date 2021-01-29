@@ -13,7 +13,7 @@ install_python() {
 install_powerline() {
 	if [ ! -f $PREFIX/usr/bin/powerline ]
 	then
-		pip install powerline-status -y
+		pip install powerline-status
 	fi
 }
 
