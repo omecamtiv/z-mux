@@ -33,3 +33,17 @@ cd z-mux
 Note: 
 - If .zshrc file not found in $HOME then zsh will be uninstalled and termux will be reverted to bash terminal.
 - Python has to be manually uninstalled by ```pkg uninstall python -y```
+
+### Previews
+
+|Screenshot 1|
+|--|
+|![img](.images/image1.jpg)|
+
+|Screenshot 2|
+|--|
+|![img](.images/image2.jpg)|
+
+|Screenshot 3|
+|--|
+|![img](.images/image3.jpg)|
