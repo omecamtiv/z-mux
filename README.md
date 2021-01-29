@@ -38,7 +38,7 @@ Note:
 
 |Screenshot 1|
 |--|
-|![img](.images/image1.jpg)|
+|![img](.images/image3.jpg)|
 
 |Screenshot 2|
 |--|
@@ -46,4 +46,4 @@ Note:
 
 |Screenshot 3|
 |--|
-|![img](.images/image3.jpg)|
+|![img](.images/image1.jpg)|
