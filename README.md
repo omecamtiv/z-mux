@@ -22,3 +22,14 @@ cd z-mux
 
 # And Done, z-mux will be installed in your termux.
 ```
+
+### How to uninstall
+
+```bash
+# Run uninstall.sh script
+./uninstall.sh
+```
+
+Note: 
+- If .zshrc file not found in $HOME then zsh will be uninstalled and termux will be reverted to bash terminal.
+- Python has to be manually uninstalled by ```pkg uninstall python -y```
