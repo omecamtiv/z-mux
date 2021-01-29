@@ -5,7 +5,7 @@ PREFIX=/data/data/com.termux/files
 install_python() {
 	if [ ! -f $PREFIX/usr/bin/python ]
 	then
-		pkg update -y ; pkg install python -y
+		pkg install python -y
 	fi
 }
 
@@ -56,7 +56,7 @@ define() {
 
 # define main
 main() {
-	if [ ! -f $PREFIX/home/.config ]
+	if [ ! -d $PREFIX/home/.config ]
 	then
 		mkdir $PREFIX/home/.config
 	fi
