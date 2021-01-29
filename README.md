@@ -10,7 +10,7 @@ This setup will install:
 
 ### How to install
 
-'''bash
+```bash
 # First clone this repository by typing...
 git clone https://github.com/sudipta-nandan/z-mux.git
 
@@ -21,4 +21,4 @@ cd z-mux
 ./install.sh
 
 # And Done, z-mux will be installed in your termux.
-'''
+```
