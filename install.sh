@@ -76,7 +76,7 @@ main() {
 		mkdir $PREFIX/home/.config
 	fi
 
-	cp -r .files/ powerline $PREFIX/home/.config/powerline
+	cp -r .files/powerline $PREFIX/home/.config/powerline
 	cp .files/rc.conf $PREFIX/home/.zshrc
 	mkdir $PREFIX/home/.figlet-font
 	cp .files/3-d.flf $PREFIX/home/.figlet-font
