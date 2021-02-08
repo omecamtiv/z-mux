@@ -79,8 +79,8 @@ main() {
 	cp -r .files/ powerline $PREFIX/home/.config/powerline
 	cp .files/rc.conf $PREFIX/home/.zshrc
 	mkdir $PREFIX/home/.figlet-font
-	cp 3-d.flf $PREFIX/home/.figlet-font
-	cp vim.conf $PREFIX/home/.vimrc
+	cp .files/3-d.flf $PREFIX/home/.figlet-font
+	cp .files/vim.conf $PREFIX/home/.vimrc
 
 	install_python
 	install_powerline
