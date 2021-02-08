@@ -6,6 +6,7 @@ HOME=/data/data/com.termux/files/home
 rm -rf $HOME/.config/powerline
 rm -rf $HOME/.zshrc
 rm -rf $HOME/.figlet-font
+rm -rf $HOME/.vimrc
 
 pkg uninstall neofetch figlet -y
 
@@ -22,6 +23,13 @@ then
 else
 	pkg uninstall zsh -y
 	chsh -s bash
+fi
+
+if [ -f $HOME/.vimrc.bak ]
+then
+	mv $HOME/.vimrc.bak $HOME/.vimrc
+else
+	pkg uninstall vim-python -y
 fi
 
 echo "[*] Successfully Uninstalled Z-MUX!"

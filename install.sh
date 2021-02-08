@@ -41,8 +41,16 @@ install_figlet() {
 	fi
 }
 
+# define install_vim_python
+install_vim_python() {
+	if [ ! -f $PREFIX/usr/bin/vim ]
+	then
+		pkg install vim-python -y
+	fi
+}
+
 # define backup
-define() {
+backup() {
 	if [ -f $PREFIX/home/.zshrc ]
 	then
 		mv $PREFIX/home/.zshrc $PREFIX/home/.zshrc.bak
@@ -52,10 +60,17 @@ define() {
 	then
 		mv $PREFIX/home/.config/powerline $PREFIX/home/.config/.powerline.bak
 	fi
+
+	if [ -f $PREFIX/home/.vimrc ]
+	then
+		mv $PREFIX/home/.vimrc $PREFIX/home/.vimrc.bak
+	fi
 }
 
 # define main
 main() {
+	backup
+
 	if [ ! -d $PREFIX/home/.config ]
 	then
 		mkdir $PREFIX/home/.config
@@ -65,12 +80,14 @@ main() {
 	cp .files/rc.conf $PREFIX/home/.zshrc
 	mkdir $PREFIX/home/.figlet-font
 	cp 3-d.flf $PREFIX/home/.figlet-font
+	cp vim.conf $PREFIX/home/.vimrc
 
 	install_python
 	install_powerline
 	install_neofetch
 	install_figlet
 	install_zsh
+	install_vim_python
 
 	chsh -s zsh
 
